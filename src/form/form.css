@@ -1,0 +1,64 @@
+.form-layout{
+    background-color: #2d2e2e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+form .data{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    border-radius: 10px;
+}
+
+form textarea{
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+form button:hover{
+    background-color: #f1f1f1;
+    color: #2d2e2e;
+}
+
+.form-layout .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.locations,.contacts,.mails{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #979292d2;
+}

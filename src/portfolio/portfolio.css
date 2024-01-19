@@ -1,0 +1,63 @@
+.portfolio {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid #2d2e2e; */
+    background-color: #2d2e2e;
+}
+
+.portfolio h1{
+    color: rgb(255, 191, 0);
+    font-size: 60px;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.categories img {
+    width: 350px;
+    object-fit: cover;
+}
+
+.category-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-btns button {
+    border: 1px solid rgb(255, 191, 0);
+    background-color: transparent;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.categories img{
+    cursor: pointer;
+    transition: transform 300ms ease-in-out, opacity 200ms ease-in-out, border-radius 300ms ease-in-out;
+}
+.categories img:hover{
+    transform: scale(1.05) translateY(-10px);
+    opacity: 0.7;
+    border-radius: 30px;
+}
+.category-btns button:hover{
+    background-color: rgb(255, 191, 0);
+    color: #fff;
+    transform: scale(1.2);
+}
+.grid-category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+
+}
